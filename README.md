@@ -1,25 +1,29 @@
-# Convert an HTML URL into a PDF
+# Convert a Web Page Into a PDF
 
-_aka_ PDF print any web page
+_aka_ easily download print a web page as a PDF.
 
-### Requirements
+## Quickstart
 
-[Bun](https://bun.sh/) and [WeasyPrint](https://weasyprint.org/) should be installed on your system
+1. Start the server: `docker compose up`
+2. Print the example.org page: 
+http://localhost:3000/?url=http://example.org&name=mysite.pdf
 
-Alternatively you can run via [Docker](https://docs.docker.com/) or [Docker Compose](https://docs.docker.com/compose/) if installed:
+## Manual Setup
 
+[Bun](https://bun.sh/) and [WeasyPrint](https://weasyprint.org/) should be installed on your system.
+
+Run the server on port 3000:
 ```
-docker compose up
-```
-
-### Running the project locally
-
-If you don't want to run via Docker Compose as detailed above you can run the server with the optional 1234 port (3000 by default):
-
-```
-bun index.ts 1234
+bun index.ts
 ```
 
-Now generate a PDF from a web page and call it "example.pdf": http://localhost:1234/?url=https://www.iana.org/help/example-domains&name=example.pdf
+You can change the port by passing it as argument: `bun index.ts 1234` to run on port 1234.
 
-### Run
+Now generate a PDF from a web page and call it "example.pdf": http://localhost:3000/?url=https://www.iana.org/help/example-domains&name=example.pdf
+
+
+## Why This Script
+
+I needed a PDF printer that could be simple, light and quick to run.
+
+This script on **only 20 lines of code with no lib dependency**!
