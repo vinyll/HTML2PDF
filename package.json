@@ -2,7 +2,9 @@
   "name": "html2pdf",
   "module": "index.ts",
   "type": "module",
+  "license": "MIT",
+  "author": "Vincent Agnano",
   "scripts": {
-    "start": "bun index.ts $PORT"
+    "start": "bun index.ts"
   }
 }

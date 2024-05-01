@@ -27,3 +27,8 @@ Now generate a PDF from a web page and call it "example.pdf": http://localhost:3
 I needed a PDF printer that could be simple, light and quick to run.
 
 This script on **only 20 lines of code with no lib dependency**!
+
+
+## License
+
+This software is free and provided with an [MIT](https://opensource.org/license/mit) license attached.
